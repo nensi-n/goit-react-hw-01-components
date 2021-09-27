@@ -4,8 +4,8 @@ function FriendsListItem({ name, avatar, isOnLine }) {
   return (
     <>
       <div className={isOnLine ? s.online : s.offline}></div>
-      <img className="avatar" src={avatar} alt="" width="48" />
-      <p className="name">{name}</p>
+      <img className={s.avatar} src={avatar} alt="" width="48" />
+      <p className={s.name}>{name}</p>
     </>
   );
 }

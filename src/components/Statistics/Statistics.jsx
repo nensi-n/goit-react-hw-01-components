@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import styles from "./statistical.module.css";
 
 export default function Statistics({ title, stats }) {
   const randomIntegerFromInterval = (min, max) => {
@@ -14,17 +15,17 @@ export default function Statistics({ title, stats }) {
     )})`;
   }
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul className="stat-list">
+    <section className={styles.statistics}>
+      <h2 className={styles.title}>{title}</h2>
+      <ul className={styles.stat_list}>
         {stats.map((data) => (
           <li
             key={data.id}
-            className="item"
+            className={styles.item}
             style={{ backgroundColor: getRandomColor() }}
           >
-            <span className="label">{data.label}</span>
-            <span className="percentage">{data.percentage}%</span>
+            <span className={styles.label}>{data.label}</span>
+            <span className={styles.percentage}>{data.percentage}%</span>
           </li>
         ))}
       </ul>

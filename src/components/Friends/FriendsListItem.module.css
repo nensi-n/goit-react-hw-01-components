@@ -1,54 +1,64 @@
-/* .item {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  padding: 10px 20px;
-  cursor: pointer;
-  background-color: #fff;
-}
-
-.isOnline {
-  display: block;
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: green;
-}
-
-.isOffline {
-  display: block;
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: red;
-}
-
 .avatar {
   margin-right: 10px;
 }
 
-.name {
-  margin-bottom: 6px;
-  font-weight: 700;
-  font-size: 18px;
-} */
-
 .online {
+  display: block;
+  margin: 0 auto;
   width: 20px;
   height: 20px;
   background-color: green;
-  /* color: green; */
   border-radius: 50%;
 }
 
 .offline {
+  display: block;
+  margin: 0 auto;
   width: 20px;
   height: 20px;
   background-color: red;
-  /* color: red; */
   border-radius: 50%;
+}
+
+.friend_list {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: solid 1px rgb(211, 221, 221);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  box-shadow: 0 0 1em;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.statusOnline,
+.statusOffline {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: green;
+  margin: 0 15px 0 15px;
+}
+
+.statusOffline {
+  background-color: red;
+}
+
+.avatar {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
 }
